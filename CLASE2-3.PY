@@ -386,9 +386,7 @@ class Empleado:
         return Empleado.secuencia
 
     def mostrar(self):
-        print("codigo;{} Nombre:{} Cargo({}):{}".format(self.codigo, self.nombre, self.cargoEmp.codigo,
-                                                        self.cargoEmp.descripcion))
-
+        print("codigo;{} Nombre:{} Cargo({}):{}".format(self.codigo, self.nombre, self.cargoEmp.codigo, self.cargoEmp.descripcion))
 
 cargo1 = Cargo("Docente")
 emp1 = Empleado("Ronald", 1000, cargo1)
