@@ -133,7 +133,7 @@ Tipo_sexo = 'M'
 civil = True
 usuario = ('Broblesj', '2001', 'Broblesj@gmail.com')
 materias = ['Programacion Web', 'PHP', 'POO']
-docente = {'nombre': 'Josue', 'edad': 20}
+docente = {'nombre': 'Brandon', 'edad': 20}
 print("""Mi nombre es {}, tengo {}      años""".format(nombres, edad))
 print(usuario, materias, docente)
 import math
