@@ -228,10 +228,34 @@ def factorial(self):
 #Aplicar las fases  para  la resolución de un problema para leer un vector de 20 números enteros,
 #y a continuación escribir en un vector A todos los números negativos,
 #y en un vector B todos los positivos o iguales a cero. Imprimir dichos vectores.
-
-
+j = 1
+k = 1
+while j <= 20:
+    n = int(input(f"Ingrese un numero {j}: "))
+    if n == 0:
+        k = k +1
+    else:
+        if n < 0:
+             j = j + 1
+        else:
+            k= k + 1  
+    j += 1
+print(f"{j} numeros son negativos")
+print(f"{k} numeros son positivos")
 ###########################################################################################################
 #3 Arreglos en dos dimensiones
 # Se tiene información sobre las calificaciones de 6 exámenes de un grupo de 30 alumnos. 
 #Los datos sobre estos exámenes se proporcionan de la siguiente manera:
-
+conA = 0
+        acu = 0
+        x = 0
+        for x in range(0,30):
+            conA +=1 
+            for x in range(1,7):
+                ca = float(input("Escriba la calificacion del examen {}, del alumno {}: ".format(x,conA)))
+                exa = ca/6
+                print("El promedio del examen es: ",format(exa))
+                acu = acu + ca
+            proG = acu/6
+            print("El alumono {}, tiene un promedio de: {}".format(conA,proG))
+            print("El examen que tuvo una mayor calificación es:",format(ca))
