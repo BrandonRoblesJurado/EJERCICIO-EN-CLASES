@@ -147,7 +147,11 @@ for i in range(i,100,i):
 ###########################################################################################################
 #2.5.3 La estructura WHILE
 #Elabore pseudocódigo para el caso en que se desean escribir los números del 1 al 100
-
+print("Escribir los numeros del 1 al 100")
+i=1
+while i<=100:
+    print(i)
+    i=i+1
 ###########################################################################################################
 #Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, 
 #utilizando un bucle controlado por el usuario.
