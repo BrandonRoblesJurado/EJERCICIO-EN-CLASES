@@ -142,8 +142,6 @@ i=1
 for i in range(i,100,i):
          suma=suma+i*i
          print("La suma total de los numeros entero es: ", suma)
-
-
 ###########################################################################################################
 #2.5.3 La estructura WHILE
 #Elabore pseudocódigo para el caso en que se desean escribir los números del 1 al 100
@@ -155,21 +153,65 @@ while i<=100:
 ###########################################################################################################
 #Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, 
 #utilizando un bucle controlado por el usuario.
-
+resp=input("Desea ingresar? (S/N) ").lower()
+num=int(input("Ingrese un numero: "))
+suma=0
+prod=1
+while resp == "s":
+    suma = suma + num
+    prod = prod * num
+    print(suma, prod)
+    resp=input("Desea continuar? (S/N) ").lower()
+print("Total de la suma es: ", suma)
+print("Total del producto es: ", prod) 
 ###########################################################################################################
 #Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, 
 #utilizando un bucle controlado por centinela.
-
+num=int(input("Ingrese un numero: "))
+resp=input("Ingrese una letra: ").lower()
+suma=0
+prod=1
+while resp != "a":
+    suma = suma + num
+    prod = prod * num
+    print(suma, prod)
+    resp=input("Ingrese una letra ").lower()
+print("Total de la suma es: ", suma)
+print("Total del producto es: ", prod)
 ###########################################################################################################
 #Determinar si un número entero proporcionado por el usuario es primo. 
-#Un número primo es un entero que no tiene más divisores que él mismo y la unidad. Elaborar Pseudocódigo:
-
+#Un número primo es un entero que no tiene más divisores que él mismo y la unidad.
+num=int(input("Ingrese un numero entero: "))
+primo=True
+divisor=2
+while divisor < num and primo==True:
+    res = num % divisor
+    if res == 0:
+        primo= False
+    divisor=divisor+1
+if primo == True:
+    print("Numero {} es primo".format(num))
+else:
+    print("Numero {} no es primo".format(num)) 
 ###########################################################################################################
 #2.5.4 La estructura REPEAT
 #Aplicar los pasos de la metodología para la solución de un problema para leer un número entero N,
 #y calcular el resultado de la siguiente serie: 1 – 1/2+ 1/3 – 1/4 +.... +/- 1/N. 
 #Resolveremos el problema utilizando bucle Repeat controlado por contador y usando banderas.
+serie=0
+I = 1
+N=int(input("Ingrese un numero: "))
+band=True
+while I<N:
+    if band == True:
+        serie=serie+(1/I)
+        band==False
+    else:
+        serie=serie-(1/I)
+        band==True
+    I=I+1
 
+print(serie)
 ###########################################################################################################
 #2.5.6 Bucles anidados
 #Calcular el factorial de N números enteros leídos de teclado.
