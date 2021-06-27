@@ -136,12 +136,12 @@ else:
 ###########################################################################################################
 #2.5.2 La estructura FOR
 #Calcular la suma de los cuadrados de los primeros 100 enteros y escribir el resultado. 
-print("suma de enteros") 
+print("Suma de enteros")
 suma=0
-for i = 1 to 100 do :
-    suma = suma +i*i
-end_for (i):
-print ("la suma es:",suma)
+i=1
+for i in range(i,100,i):
+         suma=suma+i*i
+         print("La suma total de los numeros entero es: ", suma)
 
 
 ###########################################################################################################
@@ -149,17 +149,22 @@ print ("la suma es:",suma)
 #Elabore pseudocódigo para el caso en que se desean escribir los números del 1 al 100
 
 ###########################################################################################################
-#Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, utilizando un bucle controlado por el usuario.
+#Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, 
+#utilizando un bucle controlado por el usuario.
 
 ###########################################################################################################
-#Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, utilizando un bucle controlado por centinela.
+#Diseñe un pseudocódigo para calcular la suma y producto de N números enteros, 
+#utilizando un bucle controlado por centinela.
 
 ###########################################################################################################
-#Determinar si un número entero proporcionado por el usuario es primo. Un número primo es un entero que no tiene más divisores que él mismo y la unidad. Elaborar Pseudocódigo:
+#Determinar si un número entero proporcionado por el usuario es primo. 
+#Un número primo es un entero que no tiene más divisores que él mismo y la unidad. Elaborar Pseudocódigo:
 
 ###########################################################################################################
 #2.5.4 La estructura REPEAT
-#Aplicar los pasos de la metodología para la solución de un problema para leer un número entero N y calcular el resultado de la siguiente serie: 1 – 1/2+ 1/3 – 1/4 +.... +/- 1/N. Resolveremos el problema utilizando bucle Repeat controlado por contador y usando banderas.
+#Aplicar los pasos de la metodología para la solución de un problema para leer un número entero N,
+#y calcular el resultado de la siguiente serie: 1 – 1/2+ 1/3 – 1/4 +.... +/- 1/N. 
+#Resolveremos el problema utilizando bucle Repeat controlado por contador y usando banderas.
 
 ###########################################################################################################
 #2.5.6 Bucles anidados
@@ -174,10 +179,13 @@ def factorial(self):
         print("numero={}  factorial={}".format(numero,acu))
 ###########################################################################################################
 #3.2Arreglos en una dimensión
-#Aplicar las fases  para  la resolución de un problema para leer un vector de 20 números enteros y a continuación escribir en un vector A todos los números negativos y en un vector B todos los positivos o iguales a cero. Imprimir dichos vectores.
+#Aplicar las fases  para  la resolución de un problema para leer un vector de 20 números enteros,
+#y a continuación escribir en un vector A todos los números negativos,
+#y en un vector B todos los positivos o iguales a cero. Imprimir dichos vectores.
 
 
 ###########################################################################################################
 #3 Arreglos en dos dimensiones
-# Se tiene información sobre las calificaciones de 6 exámenes de un grupo de 30 alumnos. Los datos sobre estos exámenes se proporcionan de la siguiente manera:
+# Se tiene información sobre las calificaciones de 6 exámenes de un grupo de 30 alumnos. 
+#Los datos sobre estos exámenes se proporcionan de la siguiente manera:
 
